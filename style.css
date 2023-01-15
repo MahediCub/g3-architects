@@ -171,7 +171,8 @@ color: #727272;
     width: 708px;
     height: 982px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
+    top: 20px;
 }
 .special-btn{
     color: #FFFFFF;
@@ -183,9 +184,8 @@ color: #727272;
     border-radius: 8px;
     border: none;
     font-weight: 600;
-    margin-bottom: 50px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
 }
 
@@ -200,11 +200,15 @@ color: #727272;
 
 
 /* End Some Facts Styles */
-.some-facts{
+.container{
     display: flex;
     justify-content: space-evenly;
     gap: 5px;
 }
+.facts-header{
+    margin-left: 45px;
+}
+
 .facts-header h2{
     font-weight: 700;
     font-size: 45px;
@@ -227,20 +231,118 @@ color: #727272;
     width: 241.83px;
     height: 241.83px;
     text-align: center;
+    padding-top: 20px;
    
 }
 
-.facts-itmes:hover{
-    transform: rotate(-46deg);
+.some-facts:hover .facts-itmes{
+    
+    border: 1px solid blue;
+    transform: scale(0.7) rotate(45deg);
+   
+}
+
+
+
+/* End Some Facts styles */
+
+
+/* Start Sponspore styles */
+
+.sponspors-header h2{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    text-align: center;
+    margin: 150px 0px 50px 0px;
+    
+}
+.sponspors-header p{
+   
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 30px;
+}
+
+.sponspors{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
 }
 
 /* End Some Facts styles */
 
+/* Start Developer Styles */
+.developers{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-row-gap:26px;
+        
+}
 
-/* End Some Facts styles */
+.section-title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.developer-itme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.developers .thumbnail img{
+
+    width: 177px;
+    height: 117px;
+
+}
+
+.develoder-details{
+    margin-left: 16px;
+}
+.title{
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+
+}
+.desc a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #562EFF;
+}
+/* end developers styls */
+/* start footer styles */
 
 
+.footer-contain{
+    width: 1440px;
+    height: 100px;
+    left: 240px;
+    top: 4444px;
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin-top: 145px;
+}
+.footer-details{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #424242;
+    padding-top: 35px;
+    padding-bottom: 35px;
 
-
-
-/* End Some Facts styles */
+}
